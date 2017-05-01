@@ -11,13 +11,15 @@ $(document).ready(function () {
 
   $('#step-3').on('click', function(){
     $.ajax({
-      url: 'http://first-ajax-api.herokuapp.com/ping',
+      url: 'http://first-ajax-api.herokuapp.com/pong',
       method:'GET',
       // data: ,
       dataType: 'text'
     }).done(function(responseData){
       console.log(responseData);
       $('#step3456').append(responseData);
+    }).fail(function(){
+      $('#step3456').append('sorry, I will try harder next time')
     });
   });
 
