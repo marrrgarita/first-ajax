@@ -20,6 +20,8 @@ $(document).ready(function () {
       $('#step3456').append(responseData);
     }).fail(function(){
       $('#step3456').append('sorry, I will try harder next time')
+    }).always(function(){
+      console.log('Hey the request finished!');
     });
   });
 
