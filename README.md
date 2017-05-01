@@ -30,3 +30,13 @@ What HTTP status code did the server return? What does that mean?
 Look at the "Initiator" and "Type" columns. Was this an xhr/JavaScript/AJAX request or a normal browser request?
 
 Normal browser
+
+STEP 1
+
+What are the values in the "Method" and "Status" columns? Compare these values to Step 0.
+
+They are the same
+
+What are the values in the "Type" and "Initiator" columns? Compare these values to Step 0.
+
+'xhr'

@@ -1,11 +1,14 @@
 $(document).ready(function () {
 
-  $.ajax({
-  url: 'http://first-ajax-api.herokuapp.com/',
-  method:'GET',
-  // data: ,
-  dataType: 'text'
-});
+  $('#step-2').on('click', function(){
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/',
+      method:'GET',
+      // data: ,
+      dataType: 'text'
+    });
+  });
+
 
 });
 
