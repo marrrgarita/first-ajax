@@ -9,6 +9,18 @@ $(document).ready(function () {
     });
   });
 
+  $('#step-3').on('click', function(){
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/ping',
+      method:'GET',
+      // data: ,
+      dataType: 'text'
+    }).done(function(responseData){
+      console.log(responseData);
+      $('#step3456').append(responseData);
+    });
+  });
+
 
 });
 
